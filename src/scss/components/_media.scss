@@ -1,0 +1,151 @@
+@media (width <= 430px) {
+  .container {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 248px 0 200px;
+  }
+
+  .section-hero-artist,
+  .hero-content {
+    h1 {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    h2 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .hero-content p {
+    margin: 16px 0;
+  }
+
+  .header {
+    font-family: Roboto-Bold, sans-serif;
+  }
+
+  .header,
+  .nav-list {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nav-list {
+    gap: 0;
+    margin: 16px 0;
+  }
+
+  .nav-list-home {
+    margin-top: 16px;
+  }
+
+  .hero-artist {
+    padding: 225px 0 230px;
+  }
+
+  .form-search {
+    margin: 0;
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .pricing-content {
+    gap: 52px;
+  }
+
+  .pricing-card {
+    padding-top: 16px;
+    width: 100%;
+  }
+
+  .pricing-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 190px;
+  }
+
+  .price-value {
+    margin-bottom: 40px;
+  }
+
+  .news-card {
+    flex-direction: column;
+
+    .news-title {
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 16px;
+    }
+
+    .news-body {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+
+    &:last-child > img {
+      order: 1;
+    }
+
+    .switch-order {
+      order: 2;
+    }
+  }
+
+  .news-footer a {
+    margin: 48px 0 0;
+  }
+
+  .footer-navigation {
+    gap: 30px;
+  }
+
+  .section-app-container,
+  .pricing-content {
+    flex-direction: column;
+  }
+
+  .section-app-content {
+    order: 1;
+  }
+
+  .section-app-img {
+    order: 0;
+  }
+
+  .discography-info {
+    .special {
+      font-size: 18px;
+    }
+  }
+
+  .footer-navigation,
+  .footer-down-navigation ul {
+    flex-direction: column;
+  }
+
+  .controls-container {
+    button:nth-child(1) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .column {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-card {
+    width: 137px;
+  }
+}

@@ -1,0 +1,113 @@
+@use "../abstracts/variables" as v;
+
+:root {
+  @each $shade, $value in v.$color {
+    --#{$shade}: #{$value};
+  }
+
+  @each $size, $value in v.$font-size {
+    --#{$size}: #{$value};
+  }
+}
+
+html {
+  font-size: 16px;
+  font-family: Roboto-Regular, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+}
+
+body {
+  background: var(--dark-900);
+}
+
+h1,
+h2,
+h3,
+button,
+a {
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  color: #fff;
+}
+
+h2 {
+  font-size: var(--heading-2);
+  line-height: clamp(1.6875rem, 0.9309rem + 2.924vi, 3.5625rem);
+}
+
+main {
+  position: relative;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.py-200 {
+  padding: 200px 0;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  margin-bottom: 48px;
+}
+
+.hero-content,
+.subscription,
+.pricing-card,
+.news > h2,
+.section-app > h2 {
+  text-align: center;
+}
+
+.discography-item,
+.similar-item {
+  flex-direction: column;
+}
+
+.similar-content,
+.discography-content {
+  flex-wrap: wrap;
+  gap: 25px 50px;
+}
+
+.cover-card {
+  width: 250px;
+}
+
+.similar-item {
+  text-align: center;
+}

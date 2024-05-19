@@ -1,0 +1,17 @@
+.section-app-container {
+  align-items: start;
+}
+
+.section-app-content {
+
+  width: min(600px, 100%);
+  color: var(--light-300);
+
+  & p {
+    margin: 16px 0;
+  }
+}
+
+.section-app-img {
+  margin: 0 auto;
+}

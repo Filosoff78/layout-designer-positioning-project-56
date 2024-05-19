@@ -1,0 +1,22 @@
+@use "../abstracts/mixin" as m;
+@include m.btn-theme;
+@include m.btn-icons;
+
+.pricing-card > a {
+  width: 100%;
+}
+
+.btn-special {
+  width: auto;
+  border-radius: 32px;
+  padding: 16px 40px;
+  font-size: 12.8px;
+  color: #fff;
+  text-transform: none;
+}
+
+
+.btn-small {
+  width: auto;
+  padding: 16px 30px;
+}
