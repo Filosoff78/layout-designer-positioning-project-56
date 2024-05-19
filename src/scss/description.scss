@@ -1,0 +1,59 @@
+.description {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 200px 0;
+    text-align: center;
+
+    @media screen and (max-width: $xl) {
+      padding: 250px 0;
+    }
+  }
+
+  &__form {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+
+    @media screen and (max-width: $xl) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    &-input {
+      min-width: 270px;
+      min-height: 50px;
+
+      padding-left: 22px;
+
+      border: 2px solid $grey;
+      border-radius: 3px;
+
+      background: none;
+
+      &::placeholder {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+      }
+    }
+
+    &-button {
+      grid-column: span 2;
+
+      @media screen and (max-width: $xl) {
+        grid-column: unset;
+      }
+    }
+  }
+}
+

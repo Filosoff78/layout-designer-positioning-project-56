@@ -1,0 +1,40 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 45px;
+}
+h3 .capitalize {
+  text-transform: none;
+}
+h3 .bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+h4 .capitalize {
+  text-transform: none;
+}
+
+/*# sourceMappingURL=app.css.map */

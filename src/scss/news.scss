@@ -1,0 +1,29 @@
+.news {
+
+  &__item {
+    display: flex;
+    gap: 50px;
+
+    @media screen and (min-width: $xl) {
+      &:nth-child(even) img {
+        order: 1;
+      }
+    }
+
+    @media screen and (max-width: $xl) {
+      flex-wrap: wrap;
+      & .news__item-img {
+        order: 0;
+      }
+    }
+
+    &-img {
+      max-width: calc(100vw - 40px);
+    }
+
+    &-author {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}

@@ -1,4 +1,20 @@
-@import "abstracts/module";
-@import "base/module";
-@import "layout/module";
-@import "components/module";
+@import "variables";
+@import "mixin";
+
+@import "header";
+@import "footer";
+
+@import "components";
+@import "general";
+
+@import "description";
+@import "pricing";
+@import "news";
+@import "page";
+
+@import "artist";
+@import "popular-track";
+@import "discography";
+@import "similar";
+
+@import "generate";

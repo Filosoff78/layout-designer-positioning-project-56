@@ -1,0 +1,52 @@
+.btn {
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid white;
+  width: 100%;
+  display: block;
+  padding: 21px 0;
+  text-align: center;
+
+  &-rounded {
+    border-radius: 32px;
+  }
+
+  &-icon {
+    position: relative;
+    text-align: left;
+
+    &:before {
+      content: '';
+      position: absolute;
+      filter: invert(1);
+      width: 20px;
+      height: 20px;
+      top: 18px;
+      left: 26px;
+    }
+  }
+
+  &.icon-play {
+    padding-left: 60px;
+
+    &:before {
+      top: 18px;
+      left: 26px;
+      background: url(../images/play-button.svg) center no-repeat;
+    }
+  }
+
+  &.icon-heart {
+    padding-left: 60px;
+
+    &:before {
+      top: 18px;
+      left: 26px;
+      background: url(../images/heart.svg) center no-repeat;
+    }
+  }
+}
+
+

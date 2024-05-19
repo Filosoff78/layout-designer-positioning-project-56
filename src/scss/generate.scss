@@ -1,0 +1,33 @@
+@mixin generate-classes {
+  @for $i from 0 through 40 {
+    $value: $i * 5;
+    .pt-#{$value} {
+      padding-top: #{$value}px;
+    }
+    .pb-#{$value} {
+      padding-bottom: #{$value}px;
+    }
+    .mt-#{$value} {
+      margin-top: #{$value}px;
+    }
+    .mb-#{$value} {
+      margin-bottom: #{$value}px;
+    }
+
+    .w-#{$value} {
+      width: #{$value}px;
+    }
+  }
+}
+
+@include generate-classes;
+
+@mixin generate-width-classes {
+  @for $i from 5 through 20 {
+    $value: $i * 50;
+    .w-#{$value} {
+      width: #{$value}px;
+    }
+  }
+}
+@include generate-width-classes;

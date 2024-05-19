@@ -1,0 +1,177 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: white;
+  @include reset;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  text-transform: uppercase;
+  @include reset;
+
+  @media screen and (max-width: $xl) {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 57px;
+  text-transform: uppercase;
+  @include reset;
+
+  @media screen and (max-width: $xl) {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  @include reset;
+
+  @media screen and (max-width: $xl) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .capitalize {
+    text-transform: none;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  @include reset;
+
+  .capitalize {
+    text-transform: none;
+  }
+}
+
+.text {
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.s-7 {
+  font-size: 64px;
+}
+
+.s-4 {
+  font-size: 40px;
+}
+
+.s-3 {
+  font-size: 32px;
+}
+
+.s-2 {
+  font-size: 24px;
+}
+
+.s-1 {
+  font-size: 16px;
+}
+
+.s-0 {
+  font-size: 12.8px;
+}
+
+ul {
+  @include reset;
+}
+
+p {
+  @include reset;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.none-border {
+  border: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.black { color: $black };
+.light-grey { color: #E0E0E0 };
+.grey { color: #CACACA };
+.dark-grey { color: #3C3B3D };
+.green { color: #34C176 };
+.yellow { color: #F89202 };
+.purple { color: #5328A1 };
+.brown { color: #95390C };
+
+.bg-black { background: $black };
+.bg-light-grey { background: #E0E0E0 };
+.bg-grey { background: #CACACA };
+.bg-dark-grey { background: #3C3B3D };
+.bg-green { background: #34C176 };
+.bg-yellow { background: #F89202 };
+.bg-purple { background: #5328A1 };
+.bg-brown { background: #95390C };
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: $xl) {
+  .container {
+    margin: 0 20px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}

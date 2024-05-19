@@ -1,0 +1,19 @@
+.artist {
+  background-image: url('../images/Morten Harket.png');
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    padding-top: 250px;
+    padding-bottom: 220px;
+  }
+
+  &__btn {
+    display: flex;
+    gap: 25px;
+
+    @media screen and (max-width: $xl) {
+      flex-direction: column;
+    }
+  }
+}

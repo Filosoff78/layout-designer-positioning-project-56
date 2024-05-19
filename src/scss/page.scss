@@ -1,0 +1,16 @@
+.page {
+
+  &__container {
+    display: flex;
+    gap: 145px;
+
+    @media screen and (max-width: $xl) {
+      & img {
+        order: -1;
+      }
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+  }
+}

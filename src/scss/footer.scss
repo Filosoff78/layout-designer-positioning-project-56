@@ -1,0 +1,16 @@
+.footer {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $xl) {
+      flex-wrap: wrap;
+      gap: 30px;
+      & div {
+        width: 100%;
+      }
+    }
+  }
+
+}
